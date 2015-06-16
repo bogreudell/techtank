@@ -3,7 +3,7 @@
 	$string = "";
 
 	$fp = fopen($_SESSION['user'] . '.csv', 'a') or die("Can't create " . $_SESSION['user'] . ".csv file");
-	foreach ($_POST as $key => $value) {
+/*	foreach ($_POST as $key => $value) {
     if (strcmp($value[0], "Not at all") == 0) { $val = "0"; }
 		else if (strcmp($value[0], "A little") == 0) { $val = "0.25"; }
 		else if (strcmp($value[0], "Sometimes") == 0) { $val = "0.5"; }
@@ -15,7 +15,7 @@
 	$string = substr($string, 0, -1);
 	fwrite($fp, $string) or die("Can't write to " . $_SESSION['user'] . ".csv file.");
 	fwrite($fp, "\r\n");
-	fclose($fp);
+	fclose($fp);*/
 
 	header("Location: screen_2b.php");
 ?>

@@ -26,7 +26,7 @@ $(document).ready(function(){
 
   // Determine the container class's top margin on load and resize of window
   $(window).on('load resize', function(){
-    var topMarCon = $(".btnbar").height() + 35 + 20;
+   // var topMarCon = $(".btnbar").height() + 35 + 20;
     $(".container").css({"margin-top": topMarCon});
     //console.log(topMarCon);
 
@@ -525,91 +525,21 @@ $(document).ready(function(){
 
   // SCREEN 1
   if (getCurrentFileName() == ""){
-    $('#question').append("<h1>Please choose a username for yourself.</h1><p>You will need this username to access your map in the workshop, so remember it! We may also use this username to generate a group map, so if you don't want to be publicly identifiable, use your favorite fake name.</p>");
-    $('#qcount').append('1/16');
+    //$('#question').append("<h1>Please choose a username for yourself.</h1><p>You will need this username to access your map in the workshop, so remember it! We may also use this username to generate a group map, so if you don't want to be publicly identifiable, use your favorite fake name.</p>");
+    $('#qcount').append('1 of 3');
     $("#nextbtn").attr("href", screen2a);
 
     // SCREEN 2a
   } else if (getCurrentFileName() == screen2a){
-    $('#question').append("<h1>In general, how often do you feel the following emotional states?</h1>");
-    $('#qcount').append('2/16');
+    //$('#question').append("<h1>In general, how often do you feel the following emotional states?</h1>");
+    $('#qcount').append('2 of 3');
     $("#nextbtn").attr("href", screen2b);
 
     // SCREEN 2b
   }  else if (getCurrentFileName() == screen2b){
-    $('#question').append("<h1>How much do these emotional states influence you day to day?</h1>");
-    $('#qcount').append('3/16');
+    //$('#question').append("<h1>How much do these emotional states influence you day to day?</h1>");
+    $('#qcount').append('3 of 3');
     $("#nextbtn").attr("href", screen3a);
-
-    // SCREEN 3a
-  }  else if (getCurrentFileName() == screen3a){
-    $('#question').append("<h1>Make a list of at least five and up to ten places or spaces you interact with throughout your week including CYI.</h1><p>For example, you could include home, school, Facebook, a social group, someone you’re dating, or an extracurricular activity like track & field. </p>");
-    $('#qcount').append('4/16');
-    $("#nextbtn").attr("href", screen3b);
-
-    // SCREEN 3b
-  }  else if (getCurrentFileName() == screen3b){
-    $('#question').append("<h1>How many hours do you spend in each space or place in an average week?</h1>");
-    $('#qcount').append('5/16');
-    $("#nextbtn").attr("href", screen3c);
-
-    // SCREEN 3c
-  }  else if (getCurrentFileName() == screen3c){
-    $('#question').append("<h1>How important are each of these spaces or places to you?</h1>");
-    $('#qcount').append('6/16');
-    $("#nextbtn").attr("href", screen4a);
-
-    // SCREENS 4a-4j
-  } else if (getCurrentFileName() == screen4a){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[0]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('7/16');
-    $("#nextbtn").attr("href", screen4b);
-
-  } else if (getCurrentFileName() == screen4b){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[1]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('8/16');
-    $("#nextbtn").attr("href", screen4c);
-
-  } else if (getCurrentFileName() == screen4c){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[2]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('9/16');
-    $("#nextbtn").attr("href", screen4d);
-
-  } else if (getCurrentFileName() == screen4d){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[3]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('10/16');
-    $("#nextbtn").attr("href", screen4e);
-
-  } else if (getCurrentFileName() == screen4e){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[4]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('11/16');
-    $("#nextbtn").attr("href", screen4f);
-
-  } else if (getCurrentFileName() == screen4f){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[5]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('12/16');
-    $("#nextbtn").attr("href", screen4g);
-
-  } else if (getCurrentFileName() == screen4g){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[6]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('13/16');
-    $("#nextbtn").attr("href", screen4h);
-
-  } else if (getCurrentFileName() == screen4h){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[7]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('14/16');
-    $("#nextbtn").attr("href", screen4i);
-
-  } else if (getCurrentFileName() == screen4i){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[8]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('15/16');
-    $("#nextbtn").attr("href", screen4j);
-
-  } else if (getCurrentFileName() == screen4j){
-    //$('#question').append('<h1> How does <em>' + spacesPlaces[9]+ '</em> make you feel about yourself?</h1>');
-    $('#qcount').append('16/16');
-    $("#nextbtn").attr("href", screen5);
-  }
 
 
 });
