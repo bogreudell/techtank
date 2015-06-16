@@ -1,0 +1,349 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+html, body{
+	width: 100%;
+    height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	/*color: #2B50A3;*/
+	border-bottom: 3px solid;
+	text-decoration: none;
+}
+
+h1{
+	font-size: 16px;
+	font-weight: 900;
+}
+
+
+h2{
+	/*margin-top: 20px;
+	margin-bottom: 10px;*/
+
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/* -------- CONTAINER/WRAPPER -------- */
+
+.container{
+	width: 90%;
+	margin-top: 120px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 50px;
+
+	position: relative;
+}
+
+/* -------- NEXT BUTTON -------- */
+
+.btnbar{
+	width: 100%;
+	margin: 0;
+	padding: 20px 0px 15px 0px;
+
+	position: fixed;
+	top: 0;
+	z-index: 100;
+
+	background-color: #fff;
+}
+.btnbar a{
+	font-size: 14px;
+	font-weight: 900;
+}
+#nextbtn{
+	margin-right: 5%;
+	float: right;
+
+	color: #aaa;
+}
+#nextbtn:hover{
+}
+.btnbar #backbtn{
+	position: absolute;
+	left: 5%;
+
+	color: #1AA0F9;
+}
+
+.disabled {
+  opacity: 0.75;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+/* -------- QUESTION & COUNT -------- */
+
+#qcount{
+	margin-left: 5%;
+	margin-bottom: 10px;
+
+	float: left;
+
+	font-weight: 500;
+}
+#question{
+	max-width: 550px;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+	clear: both;
+}
+#question h1{
+	margin: 10px 0px;
+}
+#question p{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+/* -------- DATA COLLECTION -------- */
+
+.datacollection{
+}
+.datacollection input{
+	margin-top: 10px;
+	padding: 6px 5px 5px 5px;
+
+	float: left;
+	clear: both;
+
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+}
+::-webkit-input-placeholder {
+   color: #888;
+}
+
+
+/* -------- SCREEN 1 & 3a (TEXTBOX) --------*/
+.myform{
+}
+.in{
+	-webkit-appearance: none;
+	background: #ddd;
+	border: 1px dotted #aaa;
+	box-shadow: none;
+}
+#singlein{
+	display: inline;
+}
+.cyitextval{
+	float: left;
+	clear: both;
+
+	-webkit-appearance: none;
+	cursor: pointer;
+	background: #fff;
+	border: 1px dotted #aaa;
+}
+.textval{
+	float: left;
+	clear: both;
+
+	-webkit-appearance: none;
+	cursor: pointer;
+	background: #fff;
+	border: 1px dotted #aaa;
+}
+.red{
+	float: left;
+	color: red;
+	cursor: pointer;
+	border: 1px solid red;
+}
+#delete{
+	width: 20px;
+	margin: 11px 0px 0px 8px;
+	padding: 15px 5px 15px 5px;
+	cursor: pointer;
+	float: left;
+
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+
+	border-radius: 50%;
+	text-align: center;
+	line-height: 0px;
+	font-size: 30px;
+	font-weight: 500;
+	color: white;
+	background-color: red;
+}
+
+.list li{
+
+	float: left;
+	clear: both;
+
+	/*padding: 6px 5px 5px 5px;
+	font-size: 15px;
+	border: 1px dotted #aaa;
+	text-transform: capitalize;
+	background-color: #fff;*/
+}
+
+
+/* -------- 5 PT SCALE --------*/
+
+.fiveptlistec h2, .fiveptlistsp h2, .fiveptlistsp1 h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+
+	float: left;
+	clear: both;
+}
+
+input[type="radio"]{
+	margin: 3px 0px;
+	padding: 10px;
+
+	position: relative;
+	float: left;
+	-webkit-appearance: none;
+
+	outline: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+label{
+	margin: 6px 0px 4px 10px;
+
+	float: left;
+	clear: right;
+	font-size: 12px;
+}
+
+input[type="radio"]:checked {
+	background-color: #e9ecee;
+	color: #99a1a7;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input[type="radio"]:checked:after {
+	width: 10px;
+	height: 10px;
+
+	content: ' ';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+
+	border-radius: 50px;
+
+	font-size: 32px;
+	background: #99a1a7;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+	text-shadow: 0px;
+}
+input[type="radio"]:active, input[type="radio"]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+/*
+input[type="checkbox"]{
+	margin-top: 15px;
+	margin-left: 5px;
+}
+input[type="checkbox"] + label{
+	font-size: 14px;
+	color: red;
+	font-weight: 900;
+}
+*/
+
+/* -------- 7 PT SCALE --------*/
+
+.binaries{
+	height: 250px;
+	margin-bottom: 30px;
+}
+.biEm{
+	margin: 5px 0px;
+
+	font-size: 16px;
+}
+.sevenptscale{
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+
+
+/* -------- TOTAL HOURS --------*/
+.hrList{
+}
+.hrList li{
+	height: 30px;
+	margin-bottom: 20px;
+}
+.hrList input{
+	color: #aaa;
+	background-color: #eee;
+	border: 1px dotted #aaa;
+}
+.hrList input, #hrTotal input{
+	margin: 0;
+	display: inline-block;
+	text-align: right;
+}
+.hrList label, .place, #hrTotal label{
+	margin-top: 8px;
+	padding: 0px 5px 5px 0px;
+
+	display: inline-block;
+
+	font-size: 16px;
+}
+.place{
+	font-weight: 900;
+}
+
+.warning{
+	background-color: red;
+}
+
+#totalStuff{
+	width: 100%;
+	max-width: 300px;
+	margin-bottom: 0px;
+	padding: 12px 0px 22px 0px;
+
+	position: fixed;
+	bottom: 0;
+
+	border-top: 2px solid #000;
+	background-color: #fff;
+}
+#totalStuff input:hover{
+	background-color: yellow;
+}
+#total{
+	text-align: right;
+	background-color: #fff;
+	color: #000;
+	border: 1px dotted #aaa;
+}
+
+/* -------- HIDDEN USERNAME --------*/
+#username{
+  display: none;
+  width: 0;
+  height: 0;
+}

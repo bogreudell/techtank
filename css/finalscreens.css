@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body{
+	font-family: Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	/*color: #2B50A3;*/
+	border-bottom: 3px solid;
+	text-decoration: none;
+}
+
+h1{
+	font-size: 16px;
+	font-weight: 900;
+}
+
+
+h2{
+	/*margin-top: 20px;
+	margin-bottom: 10px;*/
+
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+
+/* -------- CONTAINER/WRAPPER -------- */
+
+.container{
+	width: 90%;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 50px;
+
+	position: relative;
+}
+
+/* -------- NEXT BUTTON -------- */
+
+.btnbar{
+	width: 100%;
+	margin: 0;
+	padding: 30px 0px 15px 0px;
+
+	position: fixed;
+	top: 0;
+	z-index: 100;
+
+	background-color: #fff;
+}
+.btnbar h1{
+	text-align: center;
+}
+.btnbar a{
+	font-size: 14px;
+	font-weight: 900;
+}
+#nextbtn{
+	margin-right: 5%;
+	float: right;
+
+	color: #1AA0F9;
+}
+.btnbar #backbtn{
+	float: left;
+	margin-left: 5%;
+
+	color: #1AA0F9;
+}
+
+
+/* -------- VISUALIZATIONS GENERAL --------*/
+
+
+/* -------- SCREEN A --------*/
+#canvas{
+	width: 100%;
+}
+
+
+/* -------- SCREEN C --------*/
+
+#rankedEms{
+	width: 100%;
+	max-width: 340px;
+	padding: 0;
+	border: 1px solid #aaa;
+}
+#rankedEms > li{
+  cursor: pointer;
+	text-transform: capitalize;
+	background-color: #eee;
+}
+#rankedEms > li:last-child{
+	border-bottom: none;
+}
+#rankedEms > li > div{
+	padding: 6px 5px 5px 8px;
+
+	border-bottom: 1px dotted #aaa;
+	font-weight: 900;
+	font-size: 16px;
+	letter-spacing: -.1px;
+	background-color: #eee;
+}
+#rankedEms div:hover{
+	background-color: yellow;
+}
+.rankedSps{
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+.rankedSps > li{
+	margin-left: 0px;
+	padding: 6px 5px 5px 25px;
+
+	font-size: 16px;
+	border-bottom: 1px dotted #aaa;
+	text-transform: capitalize;
+	background-color: #fff;
+  cursor: pointer;
+}
+.rankedSps > li:last-child{
+	border-bottom: none;
+}
+.hide{
+	display: none;
+}
+
